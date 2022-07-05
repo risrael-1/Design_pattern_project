@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Battle game</string>
+    <string name="gameName">La Bataille</string>
+    <string name="newParty">Nouvelle Partie</string>
+    <string name="resultGames">Score</string>
+    <string name="textOptionGame">Paramètre du jeu</string>
+    <string name="player1">Nom du joueur 1</string>
+    <string name="player2">Nom du joueur 2</string>
+    <string name="team1">Nom de l\'équipe 1</string>
+    <string name="team2">Nom de l\'équipe 2</string>
+    <string name="next">Continuer</string>
 </resources>

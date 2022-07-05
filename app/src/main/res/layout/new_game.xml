@@ -6,39 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewOptionGame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Paramètre de jeu"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        android:text="@string/textOptionGame"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/player1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <EditText
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="252dp"
-        android:layout_height="62dp"
+        android:id="@+id/player1"
+        android:layout_width="246dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="47dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="Nom du joueur 2"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="568dp" />
+        android:hint="@string/player1"
+        app:layout_constraintBottom_toTopOf="@+id/player2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/player2"
         android:layout_width="250dp"
         android:layout_height="64dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Nom de l'équipe 2"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
+        android:hint="@string/player2"
+        app:layout_constraintBottom_toTopOf="@+id/team1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,46 +49,45 @@
         app:layout_constraintVertical_bias="0.851" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/team1"
         android:layout_width="253dp"
         android:layout_height="63dp"
         android:layout_marginBottom="12dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Nom du joueur 1"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
+        android:hint="@string/team1"
+        app:layout_constraintBottom_toTopOf="@+id/team2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.926" />
 
-
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="246dp"
-        android:layout_height="55dp"
-        android:layout_marginBottom="47dp"
+        android:id="@+id/team2"
+        android:layout_width="252dp"
+        android:layout_height="62dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Nom de l'équipe 1"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        android:minHeight="48dp"
+        android:hint="@string/team2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.973" />
+        app:layout_constraintVertical_bias="0.798"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonContinue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="49dp"
-        android:text="Continuer"
+        android:text="@string/next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+        app:layout_constraintTop_toBottomOf="@+id/team2"
         app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

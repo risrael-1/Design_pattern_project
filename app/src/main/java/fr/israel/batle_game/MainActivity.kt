@@ -11,9 +11,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button:Button = findViewById(R.id.button)
-        button.setOnClickListener {
-            val intent = Intent(this@MainActivity, NewGame::class.java)
+        val buttonNewGame:Button = findViewById(R.id.button)
+        buttonNewGame.setOnClickListener {
+            val intent = Intent(this, NewGame::class.java)
+            startActivity(intent)
+        }
+
+        val buttonScore:Button = findViewById(R.id.button3)
+        buttonScore.setOnClickListener {
+            val intent = Intent(this, GameReport::class.java)
             startActivity(intent)
         }
     }

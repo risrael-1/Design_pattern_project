@@ -8,5 +8,7 @@
     <string name="player2">Nom du joueur 2</string>
     <string name="team1">Nom de l\'équipe 1</string>
     <string name="team2">Nom de l\'équipe 2</string>
-    <string name="next">Continuer</string>
+    <string name="next">Lancer la partie</string>
+    <string name="gamePlayer1">Joueur 1</string>
+    <string name="gamePlayer2">Joueur 2</string>
 </resources>

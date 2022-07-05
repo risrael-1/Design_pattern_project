@@ -16,7 +16,8 @@
         app:layout_constraintBottom_toTopOf="@+id/player1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.336" />
 
     <EditText
         android:id="@+id/player1"
@@ -24,70 +25,36 @@
         android:layout_height="55dp"
         android:layout_marginBottom="47dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="@string/player1"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/player2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.973" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/player2"
         android:layout_width="250dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="312dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="@string/player2"
-        app:layout_constraintBottom_toTopOf="@+id/team1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.851" />
-
-    <EditText
-        android:id="@+id/team1"
-        android:layout_width="253dp"
-        android:layout_height="63dp"
-        android:layout_marginBottom="12dp"
-        android:ems="10"
         android:inputType="textPersonName"
-        android:hint="@string/team1"
-        app:layout_constraintBottom_toTopOf="@+id/team2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.926" />
-
-    <EditText
-        android:id="@+id/team2"
-        android:layout_width="252dp"
-        android:layout_height="62dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:hint="@string/team2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.798"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonContinue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="49dp"
+        android:layout_marginBottom="136dp"
         android:text="@string/next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/team2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,8 +1,6 @@
 package fr.israel.batle_game
 
-import android.annotation.SuppressLint
 import android.os.Bundle
-import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
 class GameReport : AppCompatActivity() {
@@ -11,9 +9,9 @@ class GameReport : AppCompatActivity() {
         setContentView(R.layout.game_reports)
 
         val actionbar = supportActionBar
-        //set actionbar title
+        // set actionbar title
         actionbar!!.title = ""
-        //set back button
+        // set back button
         actionbar.setDisplayHomeAsUpEnabled(true)
         actionbar.setDisplayHomeAsUpEnabled(true)
 

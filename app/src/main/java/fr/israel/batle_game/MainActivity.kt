@@ -1,10 +1,9 @@
 package fr.israel.batle_game
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
+import fr.israel.batle_game.visitorPattern.IntentVisitor
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,14 +12,12 @@ class MainActivity : AppCompatActivity() {
 
         val buttonNewGame:Button = findViewById(R.id.button)
         buttonNewGame.setOnClickListener {
-            val intent = Intent(this, NewGame::class.java)
-            startActivity(intent)
+            IntentVisitor.startActivity(this, NewGame::class.java);
         }
 
         val buttonScore:Button = findViewById(R.id.button3)
         buttonScore.setOnClickListener {
-            val intent = Intent(this, GameReport::class.java)
-            startActivity(intent)
+            IntentVisitor.startActivity(this, GameReport::class.java);
         }
     }
 }

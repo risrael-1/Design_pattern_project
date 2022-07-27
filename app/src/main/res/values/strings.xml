@@ -11,4 +11,7 @@
     <string name="next">Lancer la partie</string>
     <string name="gamePlayer1">Joueur 1</string>
     <string name="gamePlayer2">Joueur 2</string>
+    <string name="score">0</string>
+
+
 </resources>

@@ -7,6 +7,20 @@
     tools:context=".StartGame">
 
     <TextView
+        android:id="@+id/scorePlayer"
+        android:layout_width="86dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="104dp"
+        android:gravity="center"
+
+        android:text="0"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
         android:id="@+id/gamePlayer1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -79,5 +93,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.85"
         app:srcCompat="@drawable/ic_noun_avatar2" />
+
+    <TextView
+        android:id="@+id/scorePlayer2"
+        android:layout_width="86dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="@string/score"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.248"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
